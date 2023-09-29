@@ -25,6 +25,6 @@ Sarà possibile la compilazione dell'applicativo facendo riferimento al [file co
 
 ## Informazioni sull'applicativo
 
-É consigliato fare riferimento alla [documentazione in LaTeX](https://github.com/ProgettoGestioneAzienda/Object_Orientation/blob/main/Sistema%20di%20gestione%20di%20personale%20e%20progetti%20-%20Progetto%20Object%20Orientation.pdf) per ulteriori informazioni e per la visualizzazione dei diagrammi, invece fare riferimento alla [documentazione in JavaDoc](https://github.com/ProgettoGestioneAzienda/Object_Orientation/blob/main/DocumentazioneJavaDoc/overview-summary.html) per ulteriori specifiche riguardanti il codice dell'applicativo.
+É consigliato fare riferimento alla [documentazione in LaTeX](https://github.com/ProgettoGestioneAzienda/Object_Orientation/blob/main/Sistema%20di%20gestione%20di%20personale%20e%20progetti%20-%20Progetto%20Object%20Orientation.pdf) per ulteriori informazioni e per la visualizzazione dei diagrammi, invece fare riferimento alla [documentazione in JavaDoc](https://raw.githack.com/ProgettoGestioneAzienda/Object_Orientation/main/DocumentazioneJavaDoc/index.html) per ulteriori specifiche riguardanti il codice dell'applicativo.
 
 <p align="right">(<a href="#readme-top">torna all'inizio</a>)</p>
