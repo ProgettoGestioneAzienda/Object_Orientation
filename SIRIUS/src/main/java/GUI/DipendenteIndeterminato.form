@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="GUI.DipendenteIndeterminato">
+  <grid id="27dc6" binding="dipendenteIndeterminatoPanel" layout-manager="GridLayoutManager" row-count="10" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="8" left="8" bottom="8" right="8"/>
+    <constraints>
+      <xy x="20" y="20" width="559" height="400"/>
+    </constraints>
+    <properties>
+      <font name="Lucida Sans Typewriter" size="13"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="78ffa" class="javax.swing.JTextField" binding="nomeTextField">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font name="Lucida Sans Typewriter" size="12"/>
+        </properties>
+      </component>
+      <component id="52eb" class="javax.swing.JLabel" binding="nomeLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Lucida Sans Typewriter" size="14"/>
+          <text value="Nome:"/>
+        </properties>
+      </component>
+      <component id="5d323" class="javax.swing.JTextField" binding="cognomeTextField">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font name="Lucida Sans Typewriter" size="12"/>
+        </properties>
+      </component>
+      <component id="85bc2" class="javax.swing.JLabel" binding="cognomeLabel">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Lucida Sans Typewriter" size="14"/>
+          <text value="Cognome:"/>
+        </properties>
+      </component>
+      <component id="8d103" class="javax.swing.JTextField" binding="matricolaTextField">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font name="Lucida Sans Typewriter" size="12"/>
+        </properties>
+      </component>
+      <component id="9018" class="javax.swing.JLabel" binding="matricolaLabel">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Lucida Sans Typewriter" size="14"/>
+          <text value="Matricola:"/>
+        </properties>
+      </component>
+      <component id="c4c58" class="javax.swing.JComboBox" binding="tipoComboBox">
+        <constraints>
+          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Lucida Sans Typewriter" size="12"/>
+          <model>
+            <item value="Junior"/>
+            <item value="Middle"/>
+            <item value="Senior"/>
+          </model>
+        </properties>
+      </component>
+      <component id="b7308" class="javax.swing.JLabel" binding="tipoLabel">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Lucida Sans Typewriter" size="14"/>
+          <text value="Tipo:"/>
+        </properties>
+      </component>
+      <component id="fa223" class="javax.swing.JTextField" binding="codFiscaleTextField">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font name="Lucida Sans Typewriter" size="12"/>
+        </properties>
+      </component>
+      <component id="cf22" class="javax.swing.JLabel" binding="codFiscaleLable">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Lucida Sans Typewriter" size="14"/>
+          <text value="Codice fiscale:"/>
+        </properties>
+      </component>
+      <component id="11755" class="javax.swing.JTextField" binding="indirizzoTextField">
+        <constraints>
+          <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <enabled value="false"/>
+          <font name="Lucida Sans Typewriter" size="12"/>
+        </properties>
+      </component>
+      <component id="d729d" class="javax.swing.JLabel" binding="indirizzoLable">
+        <constraints>
+          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Lucida Sans Typewriter" size="14"/>
+          <text value="Indirizzo:"/>
+        </properties>
+      </component>
+      <component id="f5c5f" class="javax.swing.JTextField" binding="dataNascitaTextField">
+        <constraints>
+          <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font name="Lucida Sans Typewriter" size="12"/>
+        </properties>
+      </component>
+      <component id="5d2a8" class="javax.swing.JTextField" binding="dataAssunzioneTextField">
+        <constraints>
+          <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font name="Lucida Sans Typewriter" size="12"/>
+        </properties>
+      </component>
+      <component id="f7f1a" class="javax.swing.JTextField" binding="dataFineTextField">
+        <constraints>
+          <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="true"/>
+          <enabled value="false"/>
+          <font name="Lucida Sans Typewriter" size="12"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="b3089" class="javax.swing.JLabel" binding="dataNascitaLable">
+        <constraints>
+          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Lucida Sans Typewriter" size="14"/>
+          <text value="Data nascita (YYYY-MM-DD):"/>
+        </properties>
+      </component>
+      <component id="63d85" class="javax.swing.JLabel" binding="dataAssunzioneLable">
+        <constraints>
+          <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Lucida Sans Typewriter" size="14"/>
+          <text value="Data assunzione (YYYY-MM-DD):"/>
+        </properties>
+      </component>
+      <component id="37b83" class="javax.swing.JLabel" binding="dataFineLable">
+        <constraints>
+          <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Lucida Sans Typewriter" size="14"/>
+          <text value="Data fine (YYYY-MM-DD):"/>
+        </properties>
+      </component>
+      <component id="90387" class="javax.swing.JCheckBox" binding="indirizzoCheckBox">
+        <constraints>
+          <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Lucida Sans Typewriter" size="12"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="f648c" class="javax.swing.JCheckBox" binding="dirigenteCheckBox" default-binding="true">
+        <constraints>
+          <grid row="4" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Lucida Sans Typewriter" size="12"/>
+          <text value="Dirigente"/>
+        </properties>
+      </component>
+      <component id="58116" class="javax.swing.JCheckBox" binding="dataFineCheckBox">
+        <constraints>
+          <grid row="8" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Lucida Sans Typewriter" size="12"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="82259" class="javax.swing.JCheckBox" binding="dataAssunzioneOdiernaCheckBox">
+        <constraints>
+          <grid row="7" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Lucida Sans Typewriter" size="12"/>
+          <text value="Data odierna"/>
+        </properties>
+      </component>
+      <component id="976c" class="javax.swing.JCheckBox" binding="dataFineOdiernaCheckBox">
+        <constraints>
+          <grid row="8" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <enabled value="false"/>
+          <font name="Lucida Sans Typewriter" size="12"/>
+          <text value="Data odierna"/>
+        </properties>
+      </component>
+      <component id="8de1b" class="javax.swing.JButton" binding="annullaButton" default-binding="true">
+        <constraints>
+          <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="13"/>
+          <text value="Annulla"/>
+        </properties>
+      </component>
+      <component id="d5b90" class="javax.swing.JButton" binding="okButton" default-binding="true">
+        <constraints>
+          <grid row="9" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="13"/>
+          <text value="Ok"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="GUI.AreaLaboratorio">
+  <grid id="27dc6" binding="areaLaboratorioPanel" layout-manager="GridLayoutManager" row-count="3" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="8" left="8" bottom="8" right="8"/>
+    <constraints>
+      <xy x="20" y="20" width="578" height="400"/>
+    </constraints>
+    <properties>
+      <font name="Lucida Sans Typewriter" size="14"/>
+      <preferredSize width="650" height="502"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="61003" class="javax.swing.JButton" binding="indietroButton" default-binding="true">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="13"/>
+          <text value="Indietro"/>
+        </properties>
+      </component>
+      <component id="5239d" class="javax.swing.JButton" binding="aggiungiButton" default-binding="true">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="13"/>
+          <text value="Aggiungi"/>
+        </properties>
+      </component>
+      <component id="ea64e" class="javax.swing.JButton" binding="modificaButton" default-binding="true">
+        <constraints>
+          <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="13"/>
+          <text value="Modifica"/>
+        </properties>
+      </component>
+      <component id="150e8" class="javax.swing.JTextField" binding="cercaTextField">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <font name="Lucida Sans Typewriter" size="13"/>
+        </properties>
+      </component>
+      <component id="1ef04" class="javax.swing.JLabel" binding="cercaLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Lucida Sans Typewriter" size="14"/>
+          <text value="Cerca:"/>
+        </properties>
+      </component>
+      <component id="d1f0f" class="javax.swing.JButton" binding="eliminaButton" default-binding="true">
+        <constraints>
+          <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font size="13"/>
+          <text value="Elimina"/>
+        </properties>
+      </component>
+      <scrollpane id="684fc">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="4" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <font name="Lucida Sans Typewriter" size="13"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="50cb7" class="javax.swing.JTable" binding="laboratorioTable">
+            <constraints/>
+            <properties>
+              <autoCreateRowSorter value="true"/>
+              <fillsViewportHeight value="true"/>
+              <font name="Lucida Sans Typewriter" size="13"/>
+              <intercellSpacing width="5" height="1"/>
+              <selectionBackground color="-4474439"/>
+              <selectionForeground color="-1"/>
+            </properties>
+          </component>
+        </children>
+      </scrollpane>
+    </children>
+  </grid>
+</form>

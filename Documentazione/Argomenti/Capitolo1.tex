@@ -1,0 +1,71 @@
+\chapter{Analisi dei requisiti}
+    \section{Obiettivo}
+        In questa sezione verranno analizzate le informazioni recuperate dall'Utente al fine di schematizzare opportunamente il dominio del problema: si intende sviluppare un applicativo Java dotato di GUI per la gestione del personale e delle attività all'interno di un'azienda.
+
+    \section{Analisi dei requisiti}
+         L'azienda avrà due tipologie di dipendenti:
+        \begin{itemize}
+            \item Dipendenti con "contratto a progetto": posseggono una data di scadenza, ovvero il contratto sarà a tempo determinato;
+            \item Dipendenti assunti stabilmente dall'azienda: con contratto a tempo indeterminato.\\
+            Ciascun dipendente apparterrà, in base all'anzianità di servizio, ad una delle seguenti categorie:
+            \begin{itemize}
+                \item Tipo dipendente "Junior" se lavora da meno di 3 anni
+                \item Tipo dipendente "Middle" se lavora da più di 3 anni ma meno di 7
+                \item Tipo dipendente "Senior" se lavora da almeno 7 anni
+            \end{itemize}
+        \end{itemize}
+        
+        Un dipendente con contratto a tempo indeterminato, a prescindere da quanto tempo lavori nell'azienda, può essere promosso a dirigente. In ogni momento, può anche essere rimosso da dirigente.
+        \vspace{1\baselineskip}
+        
+        \noindent Nell'azienda verranno anche gestiti diversi laboratori e progetti.
+        \vspace{1\baselineskip}
+        
+        \noindent Un laboratorio presenta:
+        \begin{itemize}
+            \item Un particolare topic di cui si occupa;
+            \item Un responsabile scientifico, il quale deve essere un dipendente senior;
+            \item Delle attrezzature.
+        \end{itemize}
+
+        Per ogni laboratorio, devono esistere un solo topic e un solo responsabile scientifico che lo coordina.
+        Tuttavia, più laboratori potrebbero condividere topic o responsabile scientifico. Un dipendente può anche non ricoprire questo ruolo.\\
+        Un dipendente a tempo indeterminato potrebbe, o meno, afferire a dei laboratori.\\
+        Un laboratorio potrebbe lavorare o meno a dei progetti. Similmente, potrebbe avere delle attrezzature così come potrebbe non averne alcuna.
+        \vspace{1\baselineskip}
+
+        \noindent Un progetto ha diverse caratteristiche:
+        \begin{itemize}
+            \item Un CUP (Codice Unico Progetto);
+            \item Un nome;
+            \item Un referente scientifico, il quale deve essere un dipendente senior;
+            \item Un responsabile, il quale è un dirigente;
+            \item I fondi, che finanziano il progetto
+        \end{itemize}
+        
+        Per ogni progetto devono esistere un solo referente scientifico ed un responsabile. Ciò nonostante, più progetti potrebbero condividere referente scientifico o responsabile. Un dipendente può anche non ricoprire questi ruoli.
+        
+        Un progetto potrebbe non essere preso in carico da nessun laboratorio, così come potrebbe essere assegnato a uno o più laboratori, fino ad un massimo di tre.\\
+        
+        Tramite i fondi di un progetto possono essere acquistate delle attrezzature di cui il progetto sarà proprietario (ad esempio, computer, robot, dispositivi mobili, sensori ...), le quali possono essere assegnate ad un laboratorio che ha lavorato al progetto. Le attrezzature acquistate potrebbero anche non essere utilizzate da alcun laboratorio.
+        
+        Inoltre:
+        \begin{itemize}
+            \item Non oltre il 50\% dei fondi può essere destinato all'acquisto delle attrezzature. Malgrado ciò, è anche possibile non acquistare alcuna attrezzatura tramite i fondi di un progetto.
+            \item Non oltre il restante 50\% dei fondi è da destinare ai dipendenti assunti con un "contratto a progetto" che lavoreranno su questo progetto. L'esistenza di un dipendente con "contratto a progetto" implica che sia stato assunto con i fondi di quel progetto. Comunque, è anche possibile non assumere alcun dipendete con "contratto a progetto" con i fondi di un progetto.
+        \end{itemize}
+        Un dipendente con "contratto a progetto" non può lavorare su più progetti (o non lavorare ad alcuno) poiché è stato ingaggiato per lavorare a quel progetto specifico.
+
+
+    \section{Scelte progettuali}
+        Per ogni classe, vengono introdotti attributi di cui solitamente si intende tenere conto, come le generalità di un dipendente, il nome di un laboratorio o di un'attrezzatura, una data di inizio e fine progetto.
+        
+        In particolare, per quanto riguarda i dipendenti, introduciamo un attributo "matricola" che rappresenta la carriera lavorativa di un dipendente. Una persona può lavorare a più riprese in un'azienda, ma ciò che identifica ogni contratto stipulato è la matricola.
+        
+        Anche i periodi lavorativi dei dipendenti con "contratto a progetto" saranno identificati da una matricola. Introduciamo una data di assunzione che definirà l'apertura del contratto, che non dovrà necessariamente corrispondere alla data in cui il progetto ha inizio. Tuttavia, la data di scadenza del contratto non potrà superare la data in cui il progetto ha effettivamente fine.
+
+        Infine, è possibile impostare una data di fine rapporto per un dipendente a tempo indeterminato solo nel caso in cui non ricopra incarichi di responsabilità (ovvero referente scientifico, responsabile o responsabile scientifico). Inoltre, non è possibile impostare una responsabilità per i dipendenti per cui è stata già impostata una data di fine rapporto. Ad ogni modo, se la data di fine rapporto è successiva al momento attuale, il dipendente può mantenere mantenere o registrare afferenze ai laboratori.
+
+    \section{Individuazione delle Responsabilità}
+        Per ogni laboratorio, deve essere possibile individuare il numero di afferenti ad esso. E' dunque responsabilità del laboratorio calcolare tale numero.\\
+        Per ogni progetto, deve essere possibile individuare il costo totale delle attrezzature acquistate tramite i fondi del progetto e il costo totale dei dipendenti con contratto a progetto ingaggiati.
